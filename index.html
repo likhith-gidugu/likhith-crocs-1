@@ -96,7 +96,7 @@
             
         }
         .parent{
-            padding: 80px 10px 0px 10px;
+            padding: 2%;
         }
         .select-parent{
             padding: 6%;
@@ -235,8 +235,9 @@
 
        .shop-by-style-parent{
 text-align: center;
-position: relative;
-top:30px;
+/* position: relative;
+top:30px; */
+padding-top: 3%;
 
 
        }
@@ -282,7 +283,16 @@ top:30px;
             font-weight: bold;
         }
        } 
+       @media screen and (max-width:400px) {
         
+       .container2{
+               
+               display: grid;
+               grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+               
+               
+        }
+    }
 
     </style>
 </head>
