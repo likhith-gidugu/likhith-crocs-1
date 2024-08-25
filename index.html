@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .container-1{
+             background-color: black;
+             color: white;
+             text-align: center;
+             padding: 8px;
+             color: #FFFFFFFF;
+             font-weight: bold;
+             font-family: sans-serif;
+             position: sticky;
+             top: 0px;
+             font-size: small;
+            }
+        .container-1 a{
+            text-decoration: none;
+            color: white;
+            text-align: left;
+            position: relative;
+            right: 100px;
+        }
+       
+        .account{
+           position: absolute;
+            right: 20px;
+            padding: 5px 10px 8px 10px;
+         
+            font-size: small;
+            background-color: #000000;
+            color: white;
+            
+            font-family: sans-serif;
+            border: none;
+        
+        }
+        .account:hover{
+            background-color:#f8f4f4;
+            color: black;
+            cursor: pointer;
+            
+        }
+        .navbar{
+            position: sticky;
+            top: 35px;
+        }
+        .nav-item :hover{
+            border: none;
+            border-bottom-style: solid;
+            padding-bottom: 10px;
+            width:100%;
+          }
+        .nav-item{
+          position: sticky;
+        font-family: sans-serif ;
+        font-weight: bold;
+        font-size: 0.9rem;
+    
+          
+        }
+        .TM{
+            font-size: 40%;
+            position: relative;
+            top: -7px;
+            right: 2%;
+        }
+        .container2{
+               
+               display: grid;
+               grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+               
+               
+        }
+        .container2 img{
+            width: 97%;
+            border: 6px solid #f5f5f5;
+            padding:1rem;
+            
+             box-shadow: 1px 3px 5px rgb(204, 178, 178);
+             margin-left: 1px;
+            padding-left: 3%;
+            box-sizing: border-box;
+            
+             
+             
+            
+        }
+        .parent{
+            padding: 80px 10px 0px 10px;
+        }
+        .select-parent{
+            padding: 6%;
+            
+        }
+        .select1{
+            padding: 15px 10px;
+            width: 50%;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            color: #111827;
+            border-bottom-style: 1px solid ;
+            padding-bottom: 12px;
+            font-family: sans-serif;
+            font-size: large;
+        
+
+            
+        }
+        .select2{
+            padding: 15px 10px;
+            width: 50%;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            border-bottom-style: 1px solid ;
+            padding-bottom: 12px;
+            font-family: sans-serif;
+            font-size: large;
+            color: #111827;
+            
+
+        }
+        .select3{
+            padding: 15px 10px;
+            width: 50%;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            border-bottom-style: 1px solid ;
+            padding-bottom: 12px;
+            font-family: sans-serif;
+            font-size: large;
+            color: #111827;
+            
+
+        }
+        .select4{
+            padding: 15px 10px;
+            width: 50%;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            border-bottom-style: 1px solid ;
+            padding-bottom: 12px;
+            font-family: sans-serif;
+            font-size: large;
+            color: #111827;
+        
+
+        }
+        .select-parent{
+            text-align: center;
+        }
+        .footer{
+            background-color: black;
+            display: grid;
+               grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+               padding: 15px 15px;
+               font-size: smaller;
+               font-family: sans-serif;
+
+    
+        }
+        .footer li{
+            list-style-type: none;
+        }
+        .footer1{
+            color: #FFFFFFFF;
+        }
+        .footer2{
+            color: #FFFFFFFF;
+        }
+        .footer3{
+            color: #FFFFFFFF;
+        }
+        .footer4{
+            color: #FFFFFFFF;
+        }
+        .footer5{
+            color: #FFFFFFFF;
+        }
+        .final2{
+            position: absolute;
+            right: 25px;
+            color: #FFFFFFFF;
+        }
+        .footer5 a{
+            text-decoration: none;
+            color: #FFFFFFFF;
+        }
+        .final{
+            background-color: black;
+            padding: 0px 25px;
+        }
+        .final1{
+            color: #FFFFFFFF;
+        }
+        .hr-line{
+           /* width: 1199px;*/
+           width:100%;
+            border: 1px solid white;
+        }
+
+
+
+
+        .section4 {
+            background-color: rgba(222,220,217,255);
+           
+           padding: 1px ;
+           background-image: url("&quot;/media/wysiwyg/product-bg.jpg?auto=webp&format=pjpg&width=1343&height=166&quality=85&crop=false&fit=cover&quot");
+           background-repeat: no-repeat;
+           background-size: cover;
+       }
+
+       .section4 .new {
+          
+           text-align: center;
+           font-family: sans-serif;
+           font-size: 3.2rem;
+           color: #000000;
+           font-weight: bold;
+       }
+
+       .shop-by-style-parent{
+text-align: center;
+position: relative;
+top:30px;
+
+
+       }
+
+
+       .shop-by-style{
+
+        font-family: sans-serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+       
+        padding: 1%;
+        
+        
+        border: 2px solid green;
+        
+       }
+
+
+       .section8{
+        padding:5% 2%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); 
+        text-align: center;
+        font-size:0.7rem;
+        font-family: sans-serif;
+        background-color: #ebebeb;
+       } 
+
+    
+
+
+        
+
+       @media screen and (max-width:992px) {
+        
+        .section4 .new {
+          
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 2rem;
+            color: #000000;
+            font-weight: bold;
+        }
+       } 
+        
+
+    </style>
+</head>
+<body>
+    
+    <div class="container-1">
+        <a href="">SIGN UP FOR 50% OFF</a>
+        <button class="account" >MY ACCOUNT <i class="fa-solid fa-user"></i></button>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <img class="navbar-brand" src="https://www.crocs.in/logo-crocs-kMY.svg" width="10%" alt="navbar-logo">
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item ml-2 active">
+              <a class="nav-link" href="#">WOMEN<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ml-2 active">
+              <a class="nav-link" href="#">MEN</a>
+            </li>
+
+            
+            <li class="nav-item ml-2  active">
+              <a class="nav-link" href="#">KIDS </a>
+            </li>
+            <li class="nav-item ml-2  active">
+                <a class="nav-link" href="#">JIBBITZ <span class="TM">TM</span> CHARMS </a>
+              </li>
+              <li class="nav-item ml-2 active">
+                <a class="nav-link" href="#">CROCS SOCKS </a>
+              </li>
+            <li class="nav-item ml-2 active">
+              <a class="nav-link" href="#">BESTSELLERS</a>
+            </li>
+            
+            <li class="nav-item ml-2 active">
+              <a class="nav-link" href="#">NEW ARRIVALS </a>
+            </li>
+            <li class="nav-item ml-2 active">
+              <a class="nav-link" href="#">SALE</a>
+            </li>
+            
+          </ul>
+         
+          <span class="icons ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search mr-5" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart mr-5" viewBox="0 0 16 16">
+                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill " viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+              </svg>
+
+        </span>
+        </div>
+        
+      </nav>
+
+
+
+
+
+<section>
+    <a href=""><img width=100%
+            src="https://www.crocs.in/media/wysiwyg/Hero_Mellow_Desktop_3.png?auto=webp&format=png&quality=85"
+            alt="crocs-slides">
+    </a>
+    <a href=""> <img width=100%
+            src="https://www.crocs.in/media/wysiwyg/Monsoon_Desktop_Static_A_1.png?auto=webp&format=png&quality=85"
+            alt="season sales">
+    </a>
+
+    <a href=""><img width="100%"
+            src="https://www.crocs.in/media/wysiwyg/Upsell_2_Crush_Desktop.png?auto=webp&format=png&quality=85"
+            alt="forever-crush">
+    </a>
+</section>
+
+<div class="section4">
+    <p class="new">NEW ARRIVALS</p>
+    <a href=""><img width="100%" src="https://www.crocs.in/media/wysiwyg/Upsell_3_Jibbitz__Desktop.png?auto=webp&format=png&quality=85" alt="buy-units"></a>
+
+
+
+
+</div>
+
+<div class="section5"><img width="100%" src="https://www.crocs.in/media/wysiwyg/Kids_Toy_Story_Desktop.png?auto=webp&format=png&quality=85" alt="dispney-toy store"></div>
+<div class="shop-by-style-parent"> <span class="shop-by-style">SHOP BY STYLE</span></div>
+<div class="parent">
+    <div class="container2">
+    <a href=""><img width="30%" src="https://www.crocs.in/media/wysiwyg/Category_Clog_2.png?auto=webp&format=png&quality=85" alt="crocs"/></a>
+     <a href=""><img width="30%"src="https://www.crocs.in/media/wysiwyg/Category_Flip_2.png?auto=webp&format=png&quality=85" alt=""></a>    
+    <a href=""><img width="30%"src="https://www.crocs.in/media/wysiwyg/Category_Slide_2.png?auto=webp&format=png&quality=85" alt=""></a>
+    <a href=""><img width="30%"src="https://www.crocs.in/media/wysiwyg/Category_Sandal.png?auto=webp&format=png&quality=85" alt=""></a>    
+    <a href=""><img width="30%"src="https://www.crocs.in/media/wysiwyg/Category_Platform_2.png?auto=webp&format=png&quality=85" alt=""></a>
+    <a href=""><img width="30%"src="https://www.crocs.in/media/wysiwyg/Category_Wedge_2.png?auto=webp&format=png&quality=85" alt=""></a>
+
+
+
+    
+     </div> 
+    </div>
+
+    
+<div class="select-parent">
+    <select class="select1" name="" id=""><option class="gap">Classic Clogs and Slides</option>
+        
+    </select><br/>
+     <select class="select2" id=""><option value="">Sandals and Flip Flops</option>
+        
+
+    </select><br/>
+    <select class="select3" id=""><option value="">LiteRide</option>
+       
+
+    </select><br/>
+    <select class="select4"name="" id=""><option value="">Jibbitz Charms</option>
+        </select>
+
+</div>
+
+
+
+
+        <div class="section8">
+            <div>
+                <img src="https://www.crocs.in/media/wysiwyg/homepage/footer_top_icon1.jpg?auto=webp&format=pjpg&quality=85" alt="truck image">
+                <h3>Free Shipping</h3>
+                <p>Free shipping on all orders</p>
+            </div>
+            <div>
+                <img src="https://www.crocs.in/media/wysiwyg/homepage/footer_top_icon2.jpg?auto=webp&format=pjpg&quality=85" alt="bag-img">
+                <h3>Easy Returns</h3>
+                <p>Change your mind? No problem. Our free returns process makes it easy.</p>
+            </div>
+    
+            <div>
+                <img src="https://www.crocs.in/media/wysiwyg/homepage/footer_top_icon3.jpg?auto=webp&format=pjpg&quality=85" alt="corocs-garuntee">
+                <h3>Crocs Gurantee</h3>
+                <p>Crocs™ products are covered by a 90-day warranty</p>
+            </div>
+    
+            <div class="encrption-img-block">
+                <img src="https://www.crocs.in/media/wysiwyg/homepage/footer_top_icon4.jpg?auto=webp&format=pjpg&quality=85" alt="secured-encrption">
+                <h3>Your Information is Secure</h3>
+                <p>100% secured transaction using SSL encrypted connection.</p>
+            </div>
+    
+    
+        </div>
+    
+
+
+
+
+
+
+        
+
+<div class="footer">
+    <div class="footer1">
+        <h3>My Account</h3>
+        <li>Order Status</li>
+        <li>Sign in/Register</li>
+        <li>Returns</li>
+    </div>
+    <div class="footer2">
+        <h3>Shop</h3>
+        <li>Women</li>
+        <li>Men</li>
+        <li>Little Kids Ages 1-5</li>
+        <li>Big Kids Ages 5+</li>
+
+    </div>
+    <div class="footer3">
+        <h3>Help</h3>
+        <li>FAQs</li>
+        <li>Return Policy</li>
+        <li>Size Chart</li>
+        <li>Caring for your Crocs</li>
+
+    </div>
+    <div class="footer4">
+       <h3>Company</h3>
+       <li>About CROCS</li>
+       <li>Store Locator</li>
+       <li>Compliance Information</li>
+    </div>
+    <div class="footer5">
+      <p>For online order & delivery related queries</p>
+      <p><b>Customer Service Email</b> support-in@crocs.in<br/>
+      <b>Toll-Free Customer Service Number</b>: 000-800-919-1686 (Use "000" while dialing)<br/>
+      <b>Monday - Friday</b>: 10:00 AM - 6:00 PM IST</p>
+      <hr>
+      <p>Get the latest scoop on new arrivals, sales, special offers and receive 15% off on your first order.<br/>
+      <a href="">SIGN UP NOW</a>
+      <p>Stay connected</p>
+      <i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;<i class="fa-brands fa-instagram"></i>&nbsp;&nbsp; <i class="fa-brands fa-square-twitter"></i>
+    
+    </div>
+    
+ 
+</div>
+
+<div class="final">
+    <div class="hr-line">
+
+    </div> 
+    
+<span class="final1">crocs.in, Inc. All rights reserved.</span>
+<span class="final2">Privacy Policy</span>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+</body>
+</html>
